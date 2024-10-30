@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenbank Vorschau - Reisebuero Sonnenschein Berlin</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #99663c;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+        h1 {
+            text-align: center;
+            margin: 0;
+            color: #fff;
+        }
+        .contact-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            color: #f8f9fa;
+        }
+        .contact-info a {
+            color: #f8f9fa;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .database-preview {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .database-preview h2 {
+            color: #8c0b3b;
+        }
+        .database-preview p {
+            font-style: italic;
+            color: #6c757d;
+        }
+        .table-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .table-box {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .table-box:hover {
+            transform: translateY(-5px);
+        }
+        .table-box h2 {
+            color: #007bff;
+            margin-top: 0;
+        }
+        .table-box object {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        footer {
+            background: #343a40;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 10px 0;
+            position: bottom;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Reisebüro Sonnenschein ™ </h1>
+            <div class="contact-info">
+                <p>
+                    Postfach 12 34, 12345 Berlin<br>
+                    Telefon: 030 1234567 | Fax: 030 1234568<br>
+                    E-Mail: <a href="mailto:info@sonnenschein.de">info@sonnenschein.de</a>
+                </p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="database-preview">
+                <h2>DATENBANKENTWURF VISUALISIERUNG</h2>
+                <p>Erstellt von Kristian Alikaj <a href="https://github.com/kris96tian" target="_blank">Mehr</a></p>
+            </div>
+            <div class="table-container">
+                <div class="table-box">
+                    <h2>Artikel</h2>
+                    <object data="tblArtikel.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Kunden</h2>
+                    <object data="tblKunden.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Kunden pro Stadt</h2>
+                    <object data="qryKunden_pro_Stadt.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Buchungen</h2>
+                    <object data="tblBuchung.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Kundentelefonliste</h2>
+                    <object data="qryKunden_Telefonliste.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Kundenadressen Berlin</h2>
+                    <object data="qryKundenadressen_Berlin.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Personal</h2>
+                    <object data="tblPersonal.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Reisezielabfrage</h2>
+                    <object data="qryReiseziel_Parameterabfrage.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Teilreisezielabfrage</h2>
+                    <object data="qryReiseziel_Parameterabfrage_Teil.html" type="text/html"></object>
+                </div>
+                <div class="table-box">
+                    <h2>Gesamtpreise pro Kunde und Reise</h2>
+                    <object data="qryGesamtpreise_pro_Kunde_Reise.html" type="text/html"></object>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Reisebüro Sonnenschein ™ </p>
+    </footer>
+</body>
+</html>
